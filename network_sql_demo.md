@@ -5,13 +5,12 @@
 We will use **DB-Fiddle** as our SQL playground to run the commands and visualize the results.
 ---
 
-CREATE TABLE devices (
- id INT AUTO_INCREMENT PRIMARY KEY,  -- Device ID (auto increments)
- device_name VARCHAR(100),  -- Name of the device
- ip_address VARCHAR(15) UNIQUE, -- IP address (unique for each device)
- device_type VARCHAR(50), -- Type of device (e.g., Router, Switch, Server)
- status VARCHAR(20) -- Status (Active, Inactive)
-);
+CREATE TABLE devices ( 
+  id INT AUTO_INCREMENT PRIMARY KEY, -- Device ID (auto increments) 
+  device_name VARCHAR(100), -- Name of the device 
+  ip_address VARCHAR(15) UNIQUE, -- IP address (unique for each device) 
+  device_type VARCHAR(50), - Type of device (e.g., Router, Switch, Server) 
+  status VARCHAR(20) -- Status (Active, Inactive) );
 
 - **id**: A primary key that uniquely identifies each device (auto-increments).
 - **device_name**: Name of the device (e.g., "Router1").
