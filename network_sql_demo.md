@@ -1,86 +1,13 @@
 # SQL for Networking: A Step-by-Step Demonstration
 
-## Introduction
-
-In this demonstration, we will cover how to use SQL for managing data in a network context. We will simulate the process of creating and managing a **devices table** for a network, which includes routers, switches, and servers. This tutorial will guide you through the process of creating the database, inserting data, querying, and performing advanced operations like updating records, aggregating data, and joining tables.
-
-We will use **DB-Fiddle** as our SQL playground to run the commands and visualize the results.
-
----
-
-## Step 1: Create a Database Table
-
-Let’s start by creating a table to store information about network devices.
-
-```sql
-CREATE TABLE devices (
-    id INT AUTO_INCREMENT PRIMARY KEY,        -- Device ID (auto increments)
-    device_name VARCHAR(100),                  -- Name of the device
-    ip_address VARCHAR(15) UNIQUE,             -- IP address (unique for each device)
-    device_type VARCHAR(50),                   -- Type of device (e.g., Router, Switch, Server)
-    status VARCHAR(20)                         -- Status (Active, Inactive)
-);
-```
-
-### Explanation:
-
-- **id**: A primary key that uniquely identifies each device (auto-increments).
-- **device_name**: Name of the device (e.g., "Router1").
-- **ip_address**: IP address of the device (unique).
-- **device_type**: Type of device (Router, Switch, Server).
-- **status**: Current status of the device (e.g., Active, Inactive).
-
-Run this query in **DB-Fiddle** to create the table.
-
-Creating a `.md` (Markdown) file for your SQL demonstration with the provided code is straightforward. Below, I'll walk you through the process of creating the file, editing it with the code, and then using it to present your content.
-
-### Step-by-Step Guide to Creating the `.md` File
-
----
-
-### 1. **Choose Your Text Editor**
-
-Before you begin, you need to choose a text editor that supports Markdown. Some options are:
-
-- **Visual Studio Code (VS Code)**: If you're familiar with code editors, this is a great choice.
-- **Typora**: Great for a simple, WYSIWYG (What You See Is What You Get) Markdown experience.
-- **Mark Text**: Another good, simple, and open-source Markdown editor.
-- **Online Editors**: You can also use online tools like [Dillinger](https://dillinger.io/) or [StackEdit](https://stackedit.io/).
-
-For this guide, I'll use a general-purpose text editor (like Notepad, Sublime Text, or any of the above), as the process is the same across different platforms.
-
----
-
-### 2. **Create a New `.md` File**
-
-#### If you're using a text editor (e.g., VS Code, Sublime Text, or Notepad):
-
-- **Windows**: Right-click on your desktop or in any folder → **New** → **Text Document**. Change the file extension from `.txt` to `.md` (e.g., `network_sql_demo.md`).
-
-- **Mac/Linux**: Open your favorite text editor (e.g., Sublime Text, Atom), and create a new file. When you save it, give it a `.md` extension (e.g., `network_sql_demo.md`).
-
-Alternatively, if you're using an editor like **Visual Studio Code** or **Typora**, you can simply select **File > New File**, and save it as a `.md` file.
-
----
-
-### 3. **Edit the `.md` File with the Provided Code**
-
-Now that you have your file ready, it's time to add the SQL code and explanations. Here's how you can structure the Markdown file using the steps and code from our previous demonstration:
-
-markdown
-
-Copy code
-
-# SQL for Networking: A Step-by-Step Demonstration
-
 # ## Introduction In this demonstration, we will cover how to use SQL for managing data in a network context. We will simulate the process of creating and managing a **devices table** for a network, which includes routers, switches, and servers. This tutorial will guide you through the process of creating the database, inserting data, querying, and performing advanced operations like updating records, aggregating data, and joining tables.
 
 We will use **DB-Fiddle** as our SQL playground to run the commands and visualize the results.
 ---
 
 CREATE TABLE devices (
- id INT AUTO_INCREMENT PRIMARY KEY, -- Device ID (auto increments)
- device_name VARCHAR(100), -- Name of the device
+ id INT AUTO_INCREMENT PRIMARY KEY,  -- Device ID (auto increments)
+ device_name VARCHAR(100),  -- Name of the device
  ip_address VARCHAR(15) UNIQUE, -- IP address (unique for each device)
  device_type VARCHAR(50), -- Type of device (e.g., Router, Switch, Server)
  status VARCHAR(20) -- Status (Active, Inactive)
